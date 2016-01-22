@@ -1,6 +1,10 @@
 // bower:scss
 // endbower
 
+* {
+
+}
+
 body {
   padding: 0;
 }
@@ -13,6 +17,19 @@ body {
 .negative {
   color: #990000;
   font-weight: bold;
+}
+
+.total-stats {
+  padding: 15px 0px;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .table {
+    tr td:nth-child(3), tr th:nth-child(3), tr td:nth-child(4), tr th:nth-child(4) {
+      display: none
+    }
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

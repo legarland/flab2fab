@@ -8,7 +8,7 @@
  * Controller of the flab2FabApp
  */
 angular.module('flab2FabApp')
-  .controller('MainCtrl', function ($http, $filter) {
+  .controller('MainCtrl', function ($http, $filter, $scope) {
 
     this.users = [];
     var self = this;
@@ -52,19 +52,23 @@ angular.module('flab2FabApp')
         return user.currentWeight + ' lbs';
       else
         return '<em>hidden</em>';
-    }
+    };
 
     var parseBool = function (bool) {
       if (bool == 'Y')
         return true;
       else
         return false;
-    }
+    };
 
     $http.get(url).then(function successCallback(response) {
       console.log(response);
       var users = response.data.feed.entry;
 
+      var totalWeight = 0;
+      var currentWeight = 0;
+
+      // Loop through users from spreadsheet
       angular.forEach(users, function(item, index) {
         var userinfo = getWeight(item.content.$t);
         var user = {
@@ -93,8 +97,14 @@ angular.module('flab2FabApp')
         user.overAllPoundsLost = (user.startWeight - user.currentWeight);
         user.currentPoundsLost = (user.lastWeekWeight - user.currentWeight);
 
+        totalWeight = (totalWeight + parseFloat(user.startWeight));
+        currentWeight = (currentWeight + parseFloat(user.currentWeight));
+
         self.users.push(user);
       });
+
+      self.totalWeightLost = totalWeight - currentWeight;
+      self.totalPercLost = ((totalWeight - currentWeight) / totalWeight) * 100;
 
       self.users = $filter('orderBy')(self.users, 'overallPercLoss', true);
 
