@@ -1,0 +1,30 @@
+<h1>Marana Flab2Fab</h1>
+
+<table class="table table-striped table-bordered table-hover table-responsive">
+  <tr>
+    <th>Place</th>
+    <th>Name</th>
+    <th>Start Weight</th>
+    <th>Current Weight</th>
+    <th>This Week's Stats</th>
+    <th>Overall Stats</th>
+  </tr>
+  <tr ng-repeat="user in main.users">
+    <td>{{ $index + 1 }}</td>
+    <td>{{user.name}}</td>
+    <td ng-bind-html="main.showStartWeight(user)"></td>
+    <td ng-bind-html="main.showCurrentWeight(user)"></td>
+    <td>
+      <div ng-class="{'positive': user.currentPercLoss > 0, 'negative': user.currentPercLoss < 0}">{{ user.currentPercLoss | number:2 }}%</div>
+      <div ng-if="user.show" ng-class="{'positive': user.currentPoundsLost > 0, 'negative': user.currentPoundsLost < 0}">{{ user.currentPoundsLost | number:1 }} lbs</div>
+      <div ng-class="{'positive': user.currentPercLoss > 0, 'negative': user.currentPercLoss < 0}" ng-if="!user.show"><em>hidden</em></div>
+    </td>
+    <td>
+      <div ng-class="{'positive': user.overallPercLoss > 0, 'negative': user.overallPercLoss < 0}">{{ user.overallPercLoss | number:2 }}%</div>
+      <div ng-if="user.show" ng-class="{'positive': user.overAllPoundsLost > 0, 'negative': user.overAllPoundsLost < 0}">{{ user.overAllPoundsLost | number:1 }} lbs</div>
+      <div ng-class="{'positive': user.overallPercLoss > 0, 'negative': user.overallPercLoss < 0}" ng-if="!user.show"><em>hidden</em></div>
+    </td>
+  </tr>
+</table>
+
+{{ main.data | json }}
