@@ -12,7 +12,7 @@ angular.module('flab2FabApp')
 
     this.users = [];
     var self = this;
-    var url = 'https://spreadsheets.google.com/feeds/list/1tfNxwmS5GdMUX6NW5FIgZcgGXd_XypKmaUiJilL-04Q/od6/public/values?alt=json';
+    var url = 'http://spreadsheets.google.com/feeds/list/1tfNxwmS5GdMUX6NW5FIgZcgGXd_XypKmaUiJilL-04Q/od6/public/values?alt=json';
 
 
 
