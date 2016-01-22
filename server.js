@@ -9,7 +9,7 @@ var express = require("express"),
   publicDir = process.argv[2] || __dirname + '/dist';
 
 app.get("/", function (req, res) {
-  res.redirect("/index.html");
+  res.redirect("/flab2fab/index.html");
 });
 
 app.get("/api/info", function (req, res) {
