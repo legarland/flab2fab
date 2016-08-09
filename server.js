@@ -5,11 +5,11 @@ var express = require("express"),
   errorHandler = require('errorhandler'),
   methodOverride = require('method-override'),
   hostname = process.env.HOSTNAME || 'localhost',
-  port = parseInt(process.env.PORT, 10) || 3000,
+  port = parseInt(process.env.PORT, 10) || 3001,
   publicDir = process.argv[2] || __dirname + '/dist';
 
 app.get("/", function (req, res) {
-  res.redirect("/flab2fab/index.html");
+  res.redirect("/index.html");
 });
 
 app.get("/api/info", function (req, res) {
