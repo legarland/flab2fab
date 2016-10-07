@@ -7,7 +7,11 @@ var data = [
       {week: 1, weight: 233.4},
       {week: 2, weight: 233.4},
       {week: 3, weight: 233.4},
-      {week: 4, weight: 233.4}
+      {week: 4, weight: 233.4},
+      {week: 5, weight: 233.4},
+      {week: 6, weight: 233.4},
+      {week: 7, weight: 233.4},
+      {week: 8, weight: 233.4}
     ],
     show: true
   },
@@ -19,7 +23,12 @@ var data = [
       {week: 1, weight: 181.0},
       {week: 2, weight: 177.0},
       {week: 3, weight: 179.0},
-      {week: 4, weight: 177.8}
+      {week: 4, weight: 177.8},
+      {week: 5, weight: 177.8},
+      {week: 6, weight: 177.8},
+      {week: 7, weight: 177.8},
+      {week: 8, weight: 177.8}
+
     ],
     show: false
   },
@@ -31,7 +40,12 @@ var data = [
       {week: 1, weight: 142.4},
       {week: 2, weight: 139.6},
       {week: 3, weight: 140.2},
-      {week: 4, weight: 140.8}
+      {week: 4, weight: 140.8},
+      {week: 5, weight: 140.2},
+      {week: 6, weight: 139.0},
+      {week: 7, weight: 138.0},
+      {week: 8, weight: 138.0}
+
     ],
     show: true
   },
@@ -55,7 +69,11 @@ var data = [
       {week: 1, weight: 231.0},
       {week: 2, weight: 232.0},
       {week: 3, weight: 226.4},
-      {week: 4, weight: 230.4}
+      {week: 4, weight: 230.4},
+      {week: 5, weight: 230.4},
+      {week: 6, weight: 227.6},
+      {week: 7, weight: 227.6},
+      {week: 8, weight: 227.6}
     ],
     show: false
   },
@@ -91,7 +109,12 @@ var data = [
       {week: 1, weight: 261.0},
       {week: 2, weight: 264.3},
       {week: 3, weight: 262.8},
-      {week: 4, weight: 261.8}
+      {week: 4, weight: 261.8},
+      {week: 5, weight: 262.6},
+      {week: 6, weight: 262.6},
+      {week: 7, weight: 262.6},
+      {week: 8, weight: 262.6}
+
     ],
     show: true
   },
@@ -103,7 +126,11 @@ var data = [
       {week: 1, weight: 237.8},
       {week: 2, weight: 237.2},
       {week: 3, weight: 236.8},
-      {week: 4, weight: 235.6}
+      {week: 4, weight: 235.6},
+      {week: 5, weight: 233.4},
+      {week: 6, weight: 232.8},
+      {week: 7, weight: 232.8},
+      {week: 8, weight: 232.2}
     ],
     show: true
   },
@@ -187,7 +214,10 @@ var data = [
       {week: 1, weight: 131.4},
       {week: 2, weight: 129.8},
       {week: 3, weight: 129.8},
-      {week: 4, weight: 129.8}
+      {week: 4, weight: 129.8},
+      {week: 5, weight: 129.8},
+      {week: 6, weight: 133.2}
+
     ],
     show: false
   },
@@ -235,7 +265,9 @@ var data = [
       {week: 1, weight: 150.4},
       {week: 2, weight: 150.4},
       {week: 3, weight: 149.0},
-      {week: 4, weight: 149.0}
+      {week: 4, weight: 149.0},
+      {week: 5, weight: 149.0},
+      {week: 6, weight: 149.0}
     ],
     show: false
   }
