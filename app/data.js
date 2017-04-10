@@ -39,7 +39,8 @@ var data = [
       {week: 3, weight: 138.8},
       {week: 4, weight: 138.6},
       {week: 5, weight: 140.0},
-      {week: 6, weight: 139.6}
+      {week: 6, weight: 139.6},
+      {week: 11, weight: 139.8}
 
 
     ],
@@ -69,6 +70,7 @@ var data = [
       {week: 3, weight: 228.8},
       {week: 4, weight: 228.6},
       {week: 5, weight: 225.6},
+      {week: 6, weight: 227.8},
       {week: 6, weight: 227.8}
     ],
     show: false
@@ -111,7 +113,8 @@ var data = [
       {week: 3, weight: 231.2},
       {week: 4, weight: 231},
       {week: 5, weight: 232},
-      {week: 6, weight: 231.6}
+      {week: 6, weight: 231.6},
+      {week: 8, weight: 233.8}
     ],
     show: true
   },
@@ -167,7 +170,8 @@ var data = [
       {week: 3, weight: 123.2},
       {week: 4, weight: 118.4},
       {week: 5, weight: 118.4},
-      {week: 6, weight: 118.4}
+      {week: 6, weight: 118.4},
+      {week: 12, weight: 114.8}
 
     ],
     show: true
@@ -182,7 +186,8 @@ var data = [
       {week: 3, weight: 248.8},
       {week: 4, weight: 246.8},
       {week: 5, weight: 246.8},
-      {week: 6, weight: 242.2}
+      {week: 6, weight: 242.2},
+      {week: 11, weight: 237.8}
     ],
     show: true
   },
@@ -238,7 +243,8 @@ var data = [
       {week: 3, weight: 147},
       {week: 4, weight: 146.2},
       {week: 5, weight: 146.2},
-      {week: 6, weight: 146.0}
+      {week: 6, weight: 146.0},
+      {week: 11, weight: 145.2}
     ],
     show: false
   },
@@ -252,7 +258,9 @@ var data = [
       {week: 3, weight: 189},
       {week: 4, weight: 181.2},
       {week: 5, weight: 181.2},
-      {week: 6, weight: 181.2}
+      {week: 6, weight: 181.2},
+      {week: 11, weight: 175.2},
+      {week: 12, weight: 172.8}
     ],
     show: false
   },
@@ -266,9 +274,12 @@ var data = [
       {week: 3, weight: 221.6},
       {week: 4, weight: 213.4},
       {week: 5, weight: 213.4},
-      {week: 6, weight: 213.4}
+      {week: 6, weight: 213.4},
+      {week: 11, weight: 209.8},
+      {week: 12, weight: 208.2}
+
     ],
-    show: false
+    show: true
   },
   {
     name: 'Christen',
@@ -280,7 +291,9 @@ var data = [
       {week: 3, weight: 144.6},
       {week: 4, weight: 146.4},
       {week: 5, weight: 146.2},
-      {week: 6, weight: 145.2}
+      {week: 6, weight: 145.2},
+      {week: 11, weight: 142.8},
+      {week: 12, weight: 140}
     ],
     show: false
   }
